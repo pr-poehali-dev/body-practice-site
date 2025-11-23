@@ -70,16 +70,23 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
-        <div className="container mx-auto max-w-6xl">
+      <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 px-6">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://cdn.poehali.dev/projects/a3d578d9-4631-4679-81f8-bb11479d6b4e/files/a02a800b-9dd6-4afb-979c-b439253a1d88.jpg"
+            alt="Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
+        </div>
+        <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight">
-                  Valeria Gedz
-                </h1>
-                <div className="h-px w-24 bg-secondary"></div>
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/1b1e5709-17d3-4402-bdc6-454fe6894ae3.jpeg" 
+                alt="Valeria Gedz Logo" 
+                className="h-32 w-auto mb-8"
+              />
               <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
                 Private-практики для тех, кто выбирает лучшее
               </p>
@@ -97,7 +104,7 @@ const Index = () => {
             </div>
             <div className="animate-fade-in-up">
               <img
-                src="https://cdn.poehali.dev/projects/a3d578d9-4631-4679-81f8-bb11479d6b4e/files/be19256c-4d3b-4646-9096-408c1e86b66b.jpg"
+                src="https://cdn.poehali.dev/files/1e20407b-ea8d-463d-8e13-e1a8d9c162b8.jpeg"
                 alt="V.G. Method"
                 className="w-full h-[600px] object-cover rounded-sm shadow-2xl"
               />
@@ -106,17 +113,17 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="method" className="py-24 px-6 bg-muted/30">
+      <section id="method" className="py-24 px-6 bg-[#BFACA4]/10">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-light">Метод V.G.</h2>
-            <div className="h-px w-16 bg-secondary mx-auto"></div>
+            <div className="h-px w-16 bg-[#C4B364] mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-none shadow-none bg-background/50">
               <CardContent className="pt-8 space-y-4 text-center">
-                <div className="w-16 h-16 rounded-full bg-secondary/30 flex items-center justify-center mx-auto">
-                  <Icon name="Sparkles" size={28} className="text-primary" />
+                <div className="w-16 h-16 rounded-full bg-[#C4B364]/20 flex items-center justify-center mx-auto">
+                  <Icon name="Sparkles" size={28} className="text-[#593128]" />
                 </div>
                 <h3 className="text-2xl font-light">Персонализация</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -127,8 +134,8 @@ const Index = () => {
             </Card>
             <Card className="border-none shadow-none bg-background/50">
               <CardContent className="pt-8 space-y-4 text-center">
-                <div className="w-16 h-16 rounded-full bg-secondary/30 flex items-center justify-center mx-auto">
-                  <Icon name="Heart" size={28} className="text-primary" />
+                <div className="w-16 h-16 rounded-full bg-[#C4B364]/20 flex items-center justify-center mx-auto">
+                  <Icon name="Heart" size={28} className="text-[#593128]" />
                 </div>
                 <h3 className="text-2xl font-light">Натуропатия</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -139,8 +146,8 @@ const Index = () => {
             </Card>
             <Card className="border-none shadow-none bg-background/50">
               <CardContent className="pt-8 space-y-4 text-center">
-                <div className="w-16 h-16 rounded-full bg-secondary/30 flex items-center justify-center mx-auto">
-                  <Icon name="Shield" size={28} className="text-primary" />
+                <div className="w-16 h-16 rounded-full bg-[#C4B364]/20 flex items-center justify-center mx-auto">
+                  <Icon name="Shield" size={28} className="text-[#593128]" />
                 </div>
                 <h3 className="text-2xl font-light">Private-формат</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -157,14 +164,14 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-light">Услуги</h2>
-            <div className="h-px w-16 bg-secondary mx-auto"></div>
+            <div className="h-px w-16 bg-[#C4B364] mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border border-border/50 shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8 space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-3xl font-light">Персональная диагностика</h3>
-                  <div className="h-px w-12 bg-secondary"></div>
+                  <div className="h-px w-12 bg-[#C4B364]"></div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   Глубокий анализ текущего состояния организма с применением современных методов
@@ -172,15 +179,15 @@ const Index = () => {
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
-                    <Icon name="Check" size={20} className="text-secondary mt-1 flex-shrink-0" />
+                    <Icon name="Check" size={20} className="text-[#C4B364] mt-1 flex-shrink-0" />
                     <span>Комплексная оценка состояния здоровья</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="Check" size={20} className="text-secondary mt-1 flex-shrink-0" />
+                    <Icon name="Check" size={20} className="text-[#C4B364] mt-1 flex-shrink-0" />
                     <span>Индивидуальный протокол рекомендаций</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="Check" size={20} className="text-secondary mt-1 flex-shrink-0" />
+                    <Icon name="Check" size={20} className="text-[#C4B364] mt-1 flex-shrink-0" />
                     <span>Сопровождение в течение месяца</span>
                   </li>
                 </ul>
@@ -197,7 +204,7 @@ const Index = () => {
               <CardContent className="p-8 space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-3xl font-light">Годовая программа</h3>
-                  <div className="h-px w-12 bg-secondary"></div>
+                  <div className="h-px w-12 bg-[#C4B364]"></div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   Полное погружение в процесс трансформации с постоянной поддержкой и корректировкой
@@ -205,15 +212,15 @@ const Index = () => {
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
-                    <Icon name="Check" size={20} className="text-secondary mt-1 flex-shrink-0" />
+                    <Icon name="Check" size={20} className="text-[#C4B364] mt-1 flex-shrink-0" />
                     <span>Ежемесячные персональные сессии</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="Check" size={20} className="text-secondary mt-1 flex-shrink-0" />
+                    <Icon name="Check" size={20} className="text-[#C4B364] mt-1 flex-shrink-0" />
                     <span>Постоянная связь и корректировка протокола</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="Check" size={20} className="text-secondary mt-1 flex-shrink-0" />
+                    <Icon name="Check" size={20} className="text-[#C4B364] mt-1 flex-shrink-0" />
                     <span>Системная трансформация за год</span>
                   </li>
                 </ul>
@@ -226,11 +233,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="philosophy" className="py-24 px-6 bg-muted/30">
+      <section id="philosophy" className="py-24 px-6 bg-[#BFACA4]/10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center space-y-6 mb-12">
             <h2 className="text-4xl md:text-5xl font-light">Философия</h2>
-            <div className="h-px w-16 bg-secondary mx-auto"></div>
+            <div className="h-px w-16 bg-[#C4B364] mx-auto"></div>
           </div>
           <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
             <p className="text-center italic text-xl">
@@ -262,7 +269,7 @@ const Index = () => {
             <div className="space-y-6">
               <div className="space-y-2">
                 <h2 className="text-4xl md:text-5xl font-light">Valeria Gedz</h2>
-                <div className="h-px w-16 bg-secondary"></div>
+                <div className="h-px w-16 bg-[#C4B364]"></div>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Эксперт по премиальным телесным практикам и натуропатии с многолетним опытом работы
@@ -275,15 +282,15 @@ const Index = () => {
               </p>
               <div className="space-y-3 pt-4">
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <Icon name="GraduationCap" size={24} className="text-secondary" />
+                  <Icon name="GraduationCap" size={24} className="text-[#C4B364]" />
                   <span>Сертифицированный натуропат</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <Icon name="Award" size={24} className="text-secondary" />
+                  <Icon name="Award" size={24} className="text-[#C4B364]" />
                   <span>Эксперт по телесным практикам</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <Icon name="Users" size={24} className="text-secondary" />
+                  <Icon name="Users" size={24} className="text-[#C4B364]" />
                   <span>Private-формат работы</span>
                 </div>
               </div>
@@ -292,23 +299,23 @@ const Index = () => {
               <h3 className="text-2xl font-light">Специализация</h3>
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#C4B364] mt-2 flex-shrink-0"></div>
                   <span>Персональные протоколы восстановления</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#C4B364] mt-2 flex-shrink-0"></div>
                   <span>Натуропатические практики и омоложение</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#C4B364] mt-2 flex-shrink-0"></div>
                   <span>Системная диагностика организма</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#C4B364] mt-2 flex-shrink-0"></div>
                   <span>Работа с хроническими состояниями</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#C4B364] mt-2 flex-shrink-0"></div>
                   <span>Программы долгосрочного сопровождения</span>
                 </li>
               </ul>
