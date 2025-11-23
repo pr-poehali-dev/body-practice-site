@@ -47,7 +47,12 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-light tracking-wider">V.G. Method</div>
+            <img 
+              src="https://cdn.poehali.dev/files/1b1e5709-17d3-4402-bdc6-454fe6894ae3.jpeg" 
+              alt="Valeria Gedz Logo" 
+              className="h-12 w-auto cursor-pointer"
+              onClick={() => scrollToSection('home')}
+            />
             <div className="hidden md:flex items-center gap-8">
               {navItems.map((item) => (
                 <button
